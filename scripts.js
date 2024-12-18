@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // ******** SELECCIÓN DEL ENCABEZADO ********
-  const header = document.getElementById("encabezado");
+  const header = document.querySelector(".encabezado");
 
   // ******** FUNCIÓN PARA CAMBIAR EL ESTILO DEL ENCABEZADO AL HACER SCROLL ********
   window.addEventListener("scroll", function () {
