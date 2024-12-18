@@ -26,22 +26,29 @@ body {
 }
 
 /* ******** ESTILOS DEL ENCABEZADO ******** */
-.encabezado {
+.header_container {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
   background-color: transparent;
-  transition: background 0.5s ease, background-color 0.5s ease, box-shadow 0.3s ease;
+  transition: background 0.5s ease, background-color 0.5s ease, box-shadow 0.3s ease, all 0.3s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1em 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: space-between;
 }
 
-.encabezado.scrolled {
+.header_container.scrolled {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
-.encabezado:hover {
+.header_container:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -50,26 +57,12 @@ body {
   transition: color 0.3s ease;
 }
 
-.encabezado.scrolled .header_link {
+.header_container.scrolled .header_link {
   color: black;
 }
 
-.encabezado:hover .header_link {
+.header_container:hover .header_link {
   color: black;
-}
-
-/* ******** ESTILOS DEL CONTENEDOR DEL ENCABEZADO ******** */
-.header_container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  padding: 1em 2.5em;
-  /* background: linear-gradient(135deg, #ffffff, #f5f5f5); */
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  font-weight: bold;
-  justify-content: space-between;
 }
 
 .header_logo {
