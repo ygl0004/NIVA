@@ -10,6 +10,7 @@
   </head>
   <body>
     <!-- ******** ENCABEZADO ******** -->
+    <!-- Contenedor principal del encabezado, incluye logo, navegación y enlaces -->
     <header id="encabezado">
       <div class="header_container">
         <!-- Logo del sitio -->
@@ -22,7 +23,7 @@
           <a class="header_link" href="index.html">Plumíferos</a>
           <a class="header_link" href="index.html">Blog</a>
         </nav>
-        <!-- Enlaces adicionales con iconos -->
+        <!-- Enlaces adicionales con iconos (cesta, búsqueda, cuenta) -->
         <div class="header_container_icons">
           <a class="header_link" href="index.html">
             <img class="header_icon" src="assets/img/cabecera/cesta.svg" alt="Cesta de compras" />
@@ -38,25 +39,29 @@
     </header>
 
     <!-- ******** CUERPO DE LA PÁGINA ******** -->
+    <!-- Sección principal con un carrusel de imágenes, indicadores y texto de bienvenida -->
     <div class="main_portada">
+      <!-- Carrusel de imágenes -->
       <div class="carrusel">
-        <div
-          class="carrusel_imagen active"
-          style="background-image: url('assets/img/cuerpo/portada/wallhaven-yxdrex.png')"
-        ></div>
-        <div
-          class="carrusel_imagen"
-          style="background-image: url('assets/img/cuerpo/portada/wallhaven-g7v8pl.jpg')"
-        ></div>
-        <div
-          class="carrusel_imagen"
-          style="background-image: url('assets/img/cuerpo/portada/wallhaven-mdrlj1.jpg')"
-        ></div>
+        <div class="carrusel_imagen active imagen1"></div>
+        <div class="carrusel_imagen imagen2"></div>
+        <div class="carrusel_imagen imagen3"></div>
       </div>
+
+      <!-- Indicadores del carrusel -->
+      <div class="carrusel_indicadores">
+        <span class="indicador active"></span>
+        <span class="indicador"></span>
+        <span class="indicador"></span>
+      </div>
+
+      <!-- Texto principal de la portada con un título y una breve descripción -->
       <div class="texto_portada">
         <h1>Bienvenido a NIVA</h1>
         <p>Descubre nuestras colecciones</p>
       </div>
+
+      <!-- Información sobre productos destacados -->
       <div class="info_producto active">
         <h2>Chaqueta de Invierno</h2>
         <a href="articulo.html" class="enlace_producto">Ver Artículo</a>
@@ -71,7 +76,8 @@
       </div>
     </div>
 
-    <!-- Sección de artículos -->
+    <!-- ******** SECCIÓN DE ARTÍCULOS ******** -->
+    <!-- Contenedor con artículos destacados con imagen, nombre y precio -->
     <div class="seccion_articulos">
       <div class="articulo">
         <a href="producto1.html">
@@ -95,11 +101,13 @@
         </a>
       </div>
     </div>
+
     <!-- ******** PIE DE PÁGINA ******** -->
+    <!-- Contenedor del pie de página con varias secciones de contacto, atención, corporativo y legal -->
     <footer>
       <div class="footer_container">
-        <!-- Sección de Contacta -->
-        <div class="footer_seccion footer_contacta">
+        <!-- Sección de Contacto -->
+        <div class="footer_seccion footer_contacto">
           <h3>Contacta</h3>
           <p>
             <a href="tel:+34666666666">

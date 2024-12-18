@@ -73,16 +73,21 @@ body {
 }
 
 .header_logo {
-  display: inline-block;
+  display: flex;
   width: auto;
   max-width: 5%;
-  height: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_logo img {
   width: 100%;
   height: auto;
+  min-width: 3em;
+  min-height: auto;
   display: block;
+  text-align: center;
 }
 
 .header_nav {
@@ -131,7 +136,7 @@ body {
 }
 
 /* ******** RESPONSIVE DEL HEADER ******** */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header_container {
     flex-direction: column;
     align-items: center;
@@ -242,7 +247,7 @@ body {
 }
 
 /* ******** RESPONSIVE DEL PIE DE PÁGINA ******** */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer_container {
     justify-content: center;
     padding: 1.25em 0.625em;
@@ -294,7 +299,7 @@ body {
 
 /* ******** ESTILOS DEL CARRUSEL ******** */
 .carrusel {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -311,6 +316,43 @@ body {
 
 .carrusel_imagen.active {
   opacity: 1;
+}
+
+.imagen1 {
+  background-image: url("assets/img/cuerpo/portada/wallhaven-yxdrex.png");
+}
+
+.imagen2 {
+  background-image: url("assets/img/cuerpo/portada/wallhaven-g7v8pl.jpg");
+}
+
+.imagen3 {
+  background-image: url("assets/img/cuerpo/portada/wallhaven-mdrlj1.jpg");
+}
+
+.carrusel_indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.indicador {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicador.active {
+  background-color: #333;
 }
 
 /* ******** TEXTO DE LA PORTADA ******** */
