@@ -129,7 +129,7 @@ body {
   transform: scale(1.1);
 }
 
-/* RESPONSIVE DE LA CABECERA DE LA PÁGINA */
+/* ******** RESPONSIVE DE LA CABECERA DE LA PÁGINA ******** */
 @media (max-width: 768px) {
   .header_container {
     flex-direction: column;
