@@ -47,4 +47,21 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("scrolled");
     }
   });
+  // ******** SELECCIÓN DE SECCIONES ********
+  const sections = document.querySelectorAll(".historia_section");
+
+  // ******** FUNCIÓN PARA MOSTRAR SECCIONES AL HACER SCROLL ********
+  function showSectionsOnScroll() {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const triggerHeight = window.innerHeight * 0.8; // 80% de la pantalla
+
+      if (sectionTop < triggerHeight) {
+        section.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", showSectionsOnScroll);
+  showSectionsOnScroll(); // Para mostrar las secciones ya visibles al cargar
 });
