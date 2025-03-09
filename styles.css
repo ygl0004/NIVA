@@ -111,6 +111,12 @@ h2 {
   font-size: 1rem;
   margin: 0 0.375rem;
   transition: color 0.3s ease;
+  /* color: #c9a227; */
+  /* text-shadow: 0.25px 0.25px 0 #000000, -0.25px 0.25px 0 #000000, 0.25px -0.25px 0 #000000, -0.25px -0.25px 0 #000000; */
+}
+
+.header_container.scrolled .header_link {
+  text-shadow: none;
 }
 
 .header_link:hover {
@@ -129,7 +135,7 @@ h2 {
   width: auto;
   height: 2em;
   color: red;
-  background-color: red;
+  background-color: #c9a227;
   border-radius: 50%;
   padding: 0.25em;
   transition: transform 0.3s ease;
@@ -216,7 +222,7 @@ footer {
 
 .footer_seccion p:hover,
 .footer_seccion a:hover {
-  color: #ff6347;
+  color: #c9a227;
 }
 
 .footer_redes {
