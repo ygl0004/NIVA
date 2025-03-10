@@ -98,7 +98,7 @@ h2 {
 .header_logo img {
   width: 100%;
   height: auto;
-  min-width: 2.5em;
+  min-width: 5em;
   display: block;
   text-align: center;
 }
@@ -333,6 +333,7 @@ footer {
   height: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   filter: brightness(0.8);
@@ -354,7 +355,7 @@ footer {
 
 .imagen3 {
   /* background-image: url("assets/img/cuerpo/portada/wallhaven-yxdrex.png"); */
-  background-image: url("assets/img/cuerpo/portada/portada_4.jpg");
+  background-image: url("assets/img/cuerpo/portada/portada_6.jpg");
 }
 
 .carrusel_indicadores {
@@ -466,7 +467,7 @@ footer {
 }
 
 .articulo img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
