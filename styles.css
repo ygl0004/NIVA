@@ -143,8 +143,8 @@ h2 {
 .header_icon {
   width: auto;
   height: 2em;
-  color: red;
-  background-color: #c9a227;
+  /* color: red; */
+  /* background-color: #c9a227; */
   border-radius: 50%;
   padding: 0.25em;
   transition: transform 0.3s ease;
@@ -502,6 +502,12 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .info_producto h2 {
+    font-size: 2rem;
+  }
+}
+
 /* *********************************************************
    **           ESTILOS DE HISTORIA.HTML                    **
 ********************************************************* */
@@ -704,7 +710,7 @@ footer {
 }
 
 .plumiferos_banner .texto_portada {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   padding: 2em;
   border-radius: 10px;
 }
@@ -751,7 +757,7 @@ footer {
   left: 0;
   width: 100%;
   padding: 1em;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   color: white;
   text-align: center;
   font-size: 1.5rem;
@@ -817,11 +823,11 @@ footer {
 
 @media (max-width: 480px) {
   .plumiferos_banner .texto_portada h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .plumiferos_banner .texto_portada p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .texto-superpuesto {
@@ -835,7 +841,7 @@ footer {
 
   .footer_seccion p,
   .footer_seccion a {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
   }
 
   .footer_redes_icon {
@@ -862,7 +868,7 @@ footer {
 }
 
 .blog_banner .texto_portada {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   padding: 2em;
   border-radius: 10px;
 }
@@ -904,7 +910,8 @@ footer {
 
 .blog_post img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
 }
 
 .blog_text {
@@ -1003,11 +1010,11 @@ footer {
 
 @media (max-width: 480px) {
   .blog_banner .texto_portada h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .blog_banner .texto_portada p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .blog_text h2 {
@@ -1029,7 +1036,7 @@ footer {
 
   .footer_seccion p,
   .footer_seccion a {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
   }
 
   .footer_redes_icon {
