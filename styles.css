@@ -371,8 +371,8 @@ footer {
 
 .indicador {
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -1042,5 +1042,115 @@ footer {
   .footer_redes_icon {
     width: 1.25em;
     height: 1.25em;
+  }
+}
+/* ******** ESTILOS DE LA PÁGINA DE ARTÍCULO ******** */
+.articulo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  margin-top: 5rem; /* Ajuste para el encabezado fijo */
+}
+
+.articulo_imagen {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.articulo_titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.articulo_descripcion {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.articulo_precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6347;
+  margin-bottom: 2rem;
+}
+
+.articulo_boton {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.articulo_boton:hover {
+  background-color: #e5533d;
+}
+
+/* ******** RESPONSIVE ******** */
+@media (max-width: 768px) {
+  .header_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 1em;
+    gap: 1vh;
+    height: auto;
+  }
+
+  .header_logo img {
+    width: 5vh;
+  }
+
+  .header_nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+  }
+
+  .header_link {
+    font-size: 1.5vh;
+    margin: 0.5vh 0;
+  }
+
+  .header_container_icons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vh;
+  }
+
+  .header_icon {
+    width: 3vh;
+    height: 3vh;
+  }
+
+  .articulo_container {
+    padding: 1rem;
+  }
+
+  .articulo_titulo {
+    font-size: 1.5rem;
+  }
+
+  .articulo_descripcion {
+    font-size: 1rem;
+  }
+
+  .articulo_precio {
+    font-size: 1.25rem;
+  }
+
+  .articulo_boton {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
   }
 }
