@@ -28,7 +28,7 @@ body {
 /* ******** ESTILOS GENERALES ******** */
 h1 {
   font-size: 3rem;
-  color: #CBC9BF;
+  color: #cbc9bf;
 }
 
 h2 {
@@ -479,7 +479,7 @@ footer {
 
 .articulo p {
   font-size: 1.25rem;
-  color: #A28834;
+  color: #a28834;
 }
 
 .articulo a {
@@ -528,6 +528,10 @@ footer {
   background: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 10px;
+}
+
+.historia_banner_content p {
+  color: #c9a227;
 }
 
 /* ******** BANNER DE HISTORIA ******** */
