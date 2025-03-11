@@ -23,6 +23,7 @@
 body {
   font-family: "Belleza", "Open Sans", sans-serif;
   background: linear-gradient(135deg, #f5f5f5, #e8e8e8, #ffffff);
+  /* background-color: #202559; */
 }
 
 /* ******** ESTILOS GENERALES ******** */
@@ -76,11 +77,11 @@ h2 {
 }
 
 .header_container.scrolled .header_link {
-  color: black;
+  color: #202559;
 }
 
 .header_container:hover .header_link {
-  color: black;
+  color: #202559;
 }
 .header_nav .header_link:hover {
   color: #c9a227;
@@ -457,7 +458,8 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 2rem;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background-color: #edebe2;
 }
 
 .articulo {
@@ -515,6 +517,10 @@ footer {
 /* *********************************************************
    **           ESTILOS DE HISTORIA.HTML                    **
 ********************************************************* */
+.historia-body {
+  background: #edebe2;
+}
+
 .historia_banner {
   background: url("assets/img/cuerpo/historia/crecimiento.jpg") center/cover no-repeat;
   height: 50vh;
@@ -750,7 +756,8 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 2em 1em;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background-color: #edebe2;
 }
 
 .columna {
@@ -907,7 +914,8 @@ footer {
 /* ******** ESTILOS DEL BLOG ******** */
 .blog_container {
   padding: 2em 1em;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background-color: #edebe2;
 }
 
 .blog_section {
@@ -948,6 +956,7 @@ footer {
 .blog_text p {
   font-size: 1rem;
   margin-bottom: 1em;
+  color: #202559;
 }
 
 .blog_text .btn {
