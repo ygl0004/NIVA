@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const productInfos = document.querySelectorAll(".info_producto");
   const indicadores = document.querySelectorAll(".indicador");
   let currentIndex = 0;
+  let interval;
 
   // ******** FUNCIÓN PARA MOSTRAR LA SIGUIENTE IMAGEN ********
   function showNextImage() {
@@ -18,8 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
     indicadores[currentIndex].classList.add("active");
   }
 
-  // ******** INTERVALO PARA CAMBIAR LA IMAGEN CADA 8 SEGUNDOS ********
-  setInterval(showNextImage, 8000);
+  // ******** FUNCIÓN PARA INICIAR EL INTERVALO ********
+  function startInterval() {
+    interval = setInterval(showNextImage, 8000);
+  }
+
+  // ******** FUNCIÓN PARA REINICIAR EL INTERVALO ********
+  function resetInterval() {
+    clearInterval(interval);
+    startInterval();
+  }
+
+  // ******** INICIAR EL INTERVALO ********
+  startInterval();
 
   // ******** FUNCIÓN PARA CAMBIAR DE IMAGEN AL CLICAR EN UN INDICADOR ********
   indicadores.forEach((indicador, index) => {
@@ -33,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
       images[currentIndex].classList.add("active");
       productInfos[currentIndex].classList.add("active");
       indicadores[currentIndex].classList.add("active");
+
+      // ******** REINICIAR EL INTERVALO ********
+      resetInterval();
     });
   });
 
@@ -47,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("scrolled");
     }
   });
+
   // ******** SELECCIÓN DE SECCIONES ********
   const sections = document.querySelectorAll(".historia_section");
 
@@ -54,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function showSectionsOnScroll() {
     sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top;
-      const triggerHeight = window.innerHeight * 0.8; // 80% de la pantalla
+      const triggerHeight = window.innerHeight * 0.8;
 
       if (sectionTop < triggerHeight) {
         section.classList.add("show");
@@ -63,5 +79,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.addEventListener("scroll", showSectionsOnScroll);
-  showSectionsOnScroll(); // Para mostrar las secciones ya visibles al cargar
+  showSectionsOnScroll();
+
+  // ******** SELECCIÓN DE ARTÍCULOS ********
+  const articulos = document.querySelectorAll(".articulo");
+
+  // ******** FUNCIÓN PARA MOSTRAR ARTÍCULOS AL HACER SCROLL ********
+  function showArticulosOnScroll() {
+    articulos.forEach((articulo) => {
+      const articuloTop = articulo.getBoundingClientRect().top;
+      const triggerHeight = window.innerHeight * 0.8;
+
+      if (articuloTop < triggerHeight) {
+        articulo.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", showArticulosOnScroll);
+  showArticulosOnScroll();
 });
