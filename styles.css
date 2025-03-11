@@ -1275,3 +1275,7 @@ footer {
 .header_container.scrolled .header_icon {
   fill: #202559;
 }
+
+.texto_mantenimiento .btn {
+  margin-right: 10px; /* Ajusta el valor según sea necesario */
+}
