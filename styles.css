@@ -773,11 +773,11 @@ footer {
   .plumiferos_banner .texto_portada {
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .plumiferos_banner .texto_portada h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -823,11 +823,11 @@ footer {
 
 @media (max-width: 480px) {
   .plumiferos_banner .texto_portada h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .plumiferos_banner .texto_portada p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .texto-superpuesto {
@@ -947,11 +947,11 @@ footer {
   .blog_banner .texto_portada {
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .blog_banner .texto_portada h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -1010,11 +1010,11 @@ footer {
 
 @media (max-width: 480px) {
   .blog_banner .texto_portada h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .blog_banner .texto_portada p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .blog_text h2 {
