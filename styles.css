@@ -1232,3 +1232,13 @@ footer {
 .mantenimiento_fondo .btn {
   font-size: 1.25rem;
 }
+
+
+.header_icon {
+  fill: #c9a227;
+  transition: fill 0.3s ease;
+}
+
+.header_container.scrolled .header_icon {
+  fill: #202559;
+}
