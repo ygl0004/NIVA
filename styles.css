@@ -514,8 +514,22 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .main_portada .texto_portada h1 {
+    font-size: 2.2rem;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .main_portada .texto_portada h1 {
+    font-size: 2rem;
+    width: 50vw;
+  }
+}
+
 /* *********************************************************
-   **           ESTILOS DE HISTORIA.HTML                    **
+   **           ESTILOS DE ESENCIA.HTML                    **
 ********************************************************* */
 .historia-body {
   background: #edebe2;
@@ -644,6 +658,26 @@ footer {
 
   .historia_image img {
     max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .historia_banner_content h1 {
+    font-size: 2rem;
+  }
+
+  .historia_banner_content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .historia_banner_content h1 {
+    font-size: 2.5rem;
+  }
+
+  .historia_banner_content p {
+    font-size: 1.2rem;
   }
 }
 
@@ -805,7 +839,7 @@ footer {
   }
 
   .plumiferos_banner .texto_portada h1 {
-    font-size: 2rem;
+    font-size: 2.6rem;
     margin-bottom: 0.5rem;
   }
 
@@ -851,7 +885,7 @@ footer {
 
 @media (max-width: 480px) {
   .plumiferos_banner .texto_portada h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .plumiferos_banner .texto_portada p {
@@ -879,7 +913,7 @@ footer {
 }
 
 /* *********************************************************
-**               ESTILOS DE BLOG.HTML                     **
+**               ESTILOS DE HISTORIAS.HTML                     **
 ********************************************************* */
 
 /* ******** ESTILOS DE LA PORTADA ******** */
@@ -1040,9 +1074,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .blog_banner .texto_portada h1 {
+  /* .blog_banner .texto_portada h1 {
     font-size: 1.5rem;
-  }
+  } */
 
   .blog_banner .texto_portada p {
     font-size: 1rem;
@@ -1232,7 +1266,6 @@ footer {
 .mantenimiento_fondo .btn {
   font-size: 1.25rem;
 }
-
 
 .header_icon {
   fill: #c9a227;
