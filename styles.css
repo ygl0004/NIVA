@@ -1304,3 +1304,107 @@ footer {
 .texto_mantenimiento .btn {
   margin-right: 10px; /* Ajusta el valor según sea necesario */
 }
+
+/* ESTILOS PARA LOS HTML DE LOS PRODUCTOS */
+/* Estilos para la página de producto */
+.articulo_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  margin-top: 5rem; /* Ajuste para el encabezado fijo */
+}
+
+.articulo_imagen_container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.articulo_imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.articulo_info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.articulo_titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #202559;
+}
+
+.articulo_descripcion {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: #a28834;
+}
+
+.articulo_opciones {
+  margin-bottom: 1.5rem;
+}
+
+.articulo_opciones h3 {
+  font-size: 1.25rem;
+  color: #202559;
+  margin-bottom: 0.5rem;
+}
+
+.opciones_color,
+.opciones_talla {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.opcion_color,
+.opcion_talla {
+  padding: 0.5rem 1rem;
+  border: 1px solid #c9a227;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #202559;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.opcion_color:hover,
+.opcion_talla:hover {
+  background-color: #c9a227;
+  color: #fff;
+}
+
+.opcion_color.selected,
+.opcion_talla.selected {
+  background-color: #c9a227;
+  color: #fff;
+}
+
+.articulo_precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c9a227;
+  margin-bottom: 2rem;
+}
+
+.articulo_boton {
+  background-color: #c9a227;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.articulo_boton:hover {
+  background-color: #b08b1e;
+}
