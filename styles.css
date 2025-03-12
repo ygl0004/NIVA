@@ -347,17 +347,15 @@ footer {
 }
 
 .imagen1 {
-  /* background-image: url("assets/img/cuerpo/portada/wallhaven-mdrlj1.jpg"); */
   background-image: url("assets/img/cuerpo/portada/portada_1.jpg");
 }
 
 .imagen2 {
-  /* background-image: url("assets/img/cuerpo/portada/wallhaven-g7v8pl.jpg"); */
   background-image: url("assets/img/cuerpo/portada/portada_2.jpeg");
+  background-position: 75% 10%;
 }
 
 .imagen3 {
-  /* background-image: url("assets/img/cuerpo/portada/wallhaven-yxdrex.png"); */
   background-image: url("assets/img/cuerpo/portada/portada_3.png");
 }
 
@@ -563,8 +561,7 @@ footer {
 
 .historia_banner_content p {
   /* color: #c9a227; */
-  color: #cbc9bf;;
-  
+  color: #cbc9bf;
 }
 
 /* ******** BANNER DE HISTORIA ******** */
@@ -806,7 +803,7 @@ footer {
 
 .plumiferos_banner p {
   font-size: 1.5rem;
-  color: #cbc9bf;;
+  color: #cbc9bf;
 }
 
 /* ******** ESTILOS DE PLUMÍFEROS ******** */
