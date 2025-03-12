@@ -562,6 +562,7 @@ footer {
 .historia_banner_content p {
   /* color: #c9a227; */
   color: #202559;
+  font-weight: bold;
 }
 
 /* ******** BANNER DE HISTORIA ******** */
@@ -804,6 +805,7 @@ footer {
 .plumiferos_banner p {
   font-size: 1.5rem;
   color: #202559;
+  font-weight: bold;
 }
 
 /* ******** ESTILOS DE PLUMÍFEROS ******** */
@@ -967,6 +969,7 @@ footer {
   font-size: 1.5rem;
   /* color: #b08b1e; */
   color: #202559;
+  font-weight: bold;
 }
 
 /* ******** ESTILOS DEL BLOG ******** */
