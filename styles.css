@@ -1337,11 +1337,13 @@ footer {
   letter-spacing: 0.1em;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   width: 100%;
+  color: #c9a227;
 }
 
 .mantenimiento_fondo .texto_portada p {
   font-size: 1.3rem;
-  color: #c9a227;
+  color: #edebe2;
+  font-weight: bold;
 }
 
 .mantenimiento_fondo .btn {
