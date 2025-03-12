@@ -346,17 +346,17 @@ footer {
 
 .imagen1 {
   /* background-image: url("assets/img/cuerpo/portada/wallhaven-mdrlj1.jpg"); */
-  background-image: url("assets/img/cuerpo/portada/portada_5.jpg");
+  background-image: url("assets/img/cuerpo/portada/portada_1.jpg");
 }
 
 .imagen2 {
   /* background-image: url("assets/img/cuerpo/portada/wallhaven-g7v8pl.jpg"); */
-  background-image: url("assets/img/cuerpo/portada/portada_3.jpg");
+  background-image: url("assets/img/cuerpo/portada/portada_2.jpeg");
 }
 
 .imagen3 {
   /* background-image: url("assets/img/cuerpo/portada/wallhaven-yxdrex.png"); */
-  background-image: url("assets/img/cuerpo/portada/portada_6.jpg");
+  background-image: url("assets/img/cuerpo/portada/portada_3.png");
 }
 
 .carrusel_indicadores {
@@ -394,6 +394,7 @@ footer {
   color: #e8e8e8;
   padding: 2rem;
   border-radius: 5px;
+  /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .texto_portada h1 {
@@ -536,7 +537,7 @@ footer {
 }
 
 .historia_banner {
-  background: url("assets/img/cuerpo/historia/crecimiento.jpg") center/cover no-repeat;
+  background: url("assets/img/cuerpo/historia/portada.jpeg") center/cover no-repeat;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -560,7 +561,7 @@ footer {
 /* ******** BANNER DE HISTORIA ******** */
 .historia_banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
-    url("assets/img/cuerpo/historia/crecimiento.jpg") center/cover no-repeat;
+    url("assets/img/cuerpo/historia/portada.jpeg") center/cover no-repeat;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -709,8 +710,9 @@ footer {
 }
 
 .columna img {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 90vh;
+  display: block;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
@@ -761,15 +763,28 @@ footer {
   position: relative;
   height: 50vh;
   overflow: hidden;
-  background: url("assets/img/cuerpo/plumiferos/portada.jpg") no-repeat center center/cover;
+  background: url("assets/img/cuerpo/plumiferos/portada.jpeg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
+  /* filter: brightness(0.8); */
 }
 
+/* .plumiferos_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}  */
+
 .plumiferos_banner .texto_portada {
+  /* z-index: 200; */
   /* background: rgba(0, 0, 0, 0.3); */
   padding: 2em;
   border-radius: 10px;
@@ -803,23 +818,13 @@ footer {
   transition: transform 0.3s ease;
 }
 
-.columna:hover {
-  transform: scale(1.05);
-}
-
-.columna img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .texto-superpuesto {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 1em;
-  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgba(0, 0, 0, 0.3);
   color: white;
   text-align: center;
   font-size: 1.5rem;
@@ -921,7 +926,7 @@ footer {
   position: relative;
   height: 50vh;
   overflow: hidden;
-  background: url("assets/img/cuerpo/blog/portada.jpg") no-repeat center center/cover;
+  background: url("assets/img/cuerpo/blog/portada.jpeg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -929,7 +934,19 @@ footer {
   text-align: center;
 }
 
+/* .blog_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+} */
+
 .blog_banner .texto_portada {
+  /* z-index: 200; */
   /* background: rgba(0, 0, 0, 0.3); */
   padding: 2em;
   border-radius: 10px;
