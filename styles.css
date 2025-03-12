@@ -429,6 +429,7 @@ footer {
   padding: 1rem;
   border-radius: 5px;
   pointer-events: none;
+  width: 100%;
 }
 
 .info_producto.active {
@@ -1282,6 +1283,7 @@ footer {
   margin-bottom: 1rem;
   letter-spacing: 0.1em;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 .mantenimiento_fondo .texto_portada p {
