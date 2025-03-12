@@ -98,4 +98,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", showArticulosOnScroll);
   showArticulosOnScroll();
+
+  // ******** FUNCIÓN DE ANIMACIÓN PARA LOS PRODUCTOS ********
+  const productoContainer = document.querySelector(".producto_container");
+
+  function showProductoContainer() {
+    const productoTop = productoContainer.getBoundingClientRect().top;
+    const triggerHeight = window.innerHeight * 0.8;
+
+    if (productoTop < triggerHeight) {
+      productoContainer.classList.add("show");
+    }
+  }
+
+  window.addEventListener("scroll", showProductoContainer);
+  showProductoContainer();
 });
