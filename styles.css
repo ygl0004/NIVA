@@ -7,21 +7,21 @@
 
 /* ******** FUENTES PERSONALIZADAS ******** */
 @font-face {
-  font-family: "Belleza";
-  src: url("assets/fonts/Belleza/Belleza-Regular.ttf") format("truetype");
+  font-family: "Roxborough_CF";
+  src: url("assets/fonts/Roxborough_CF/Roxborough\ CF.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-family: "TAN_Angleton_Regular";
+  src: url("assets/fonts/TAN_Angleton_Regular/TAN-Angleton-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "Belleza", "Open Sans", sans-serif;
+  font-family: "Roxborough_CF", "TAN_Angleton_Regular", sans-serif;
   background: linear-gradient(135deg, #f5f5f5, #e8e8e8, #ffffff);
   /* background-color: #202559; */
 }
@@ -197,7 +197,7 @@ h2 {
 
 /* ******** ESTILOS DEL PIE DE PÁGINA ******** */
 footer {
-  font-family: "Open Sans";
+  font-family: "TAN_Angleton_Regular";
 }
 
 .footer_container {
